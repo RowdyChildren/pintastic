@@ -66,7 +66,7 @@
 }
 
 
-body {
+.content {
 	/* make things invisible upon start */
 	-webkit-animation: fadeIn ease-in-out .5s;
 /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */

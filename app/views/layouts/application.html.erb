@@ -13,28 +13,31 @@
 
   <body>
 <div class="icon-bar five-up">
-  <a class="item">
+  <a class="item" href="/">
     
     <label>Home</label>
   </a>
-  <a class="item">
+  <a class="item" href="/users">
     <!-- <img src="fi-bookmark.svg" > -->
-    <label>Bookmark</label>
+    <label>Users</label>
   </a>
-  <a class="item">
+  <a class="item" href="/boards">
     <!-- <img src="fi-info.svg" > -->
-    <label>Info</label>
+    <label>Boards</label>
   </a>
-  <a class="item">
+  <a class="item" href="/pins">
     <!-- <img src="img/images/fi-mail.svg" > -->
-    <label>Mail</label>
+    <label>Pins</label>
   </a>
-  <a class="item">
-    <!-- <img src="../assets/img/images/fi-like.svg" > -->
-    <label>Like</label>
+  <a class="item" href="/about">
+    <!-- <img src="img/images/fi-mail.svg" > -->
+    <label>About</label>
   </a>
+  
 </div>
+<div class="content">
     <%= yield %>
+    </div>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

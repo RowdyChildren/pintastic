@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/about'
 
- #get 'home' => 'users#index'
+ get 'about' => 'static_pages#about'
 
  delete '/pins' => "pins#delete_all"
   resources :boards
