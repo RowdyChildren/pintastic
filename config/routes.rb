@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
  
- get 'home' => 'users#index'
+  get 'static_pages/home'
+
+  get 'static_pages/about'
+
+ #get 'home' => 'users#index'
 
  delete '/pins' => "pins#delete_all"
   resources :boards
@@ -13,7 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root to:'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

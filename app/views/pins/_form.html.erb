@@ -17,11 +17,13 @@
   </div>
   <div class="field">
     <%= f.label :image %><br>
-    <%= f.text_field :image %>
+    
+    <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %>
   </div>
   <div class="field">
     <%= f.label :board_id %><br>
-    <%= f.number_field :board_id %>
+    <%= f.collection_select :board_id, Board.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>
