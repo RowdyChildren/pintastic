@@ -21,14 +21,6 @@ ActiveRecord::Schema.define(version: 20141208234048) do
     t.datetime "updated_at"
   end
 
-  create_table "borards", force: true do |t|
-    t.string   "name"
-    t.text     "about"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pins", force: true do |t|
     t.string   "name"
     t.string   "image"

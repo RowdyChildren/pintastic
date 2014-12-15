@@ -12,32 +12,14 @@
   </head>
 
   <body>
-<div class="icon-bar five-up">
-  <a class="item" href="/">
-    
-    <label>Home</label>
-  </a>
-  <a class="item" href="/users">
-    <!-- <img src="fi-bookmark.svg" > -->
-    <label>Users</label>
-  </a>
-  <a class="item" href="/boards">
-    <!-- <img src="fi-info.svg" > -->
-    <label>Boards</label>
-  </a>
-  <a class="item" href="/pins">
-    <!-- <img src="img/images/fi-mail.svg" > -->
-    <label>Pins</label>
-  </a>
-  <a class="item" href="/about">
-    <!-- <img src="img/images/fi-mail.svg" > -->
-    <label>About</label>
-  </a>
-  
-</div>
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
 <div class="content">
     <%= yield %>
     </div>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %> 
   </body>
 </html>
