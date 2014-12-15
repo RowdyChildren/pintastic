@@ -39,6 +39,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'carrierwave'
 #gem 'foundation-rails'
-gem 'bootstrap-sass', '~> 3.3.1'
+#gem 'foundation-rails'
 gem 'sass-rails', '>= 3.2'
+gem 'starter_generators'
 gem 'autoprefixer-rails'
+gem 'devise'

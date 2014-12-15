@@ -12,11 +12,14 @@
  *
  *= require_tree .
  *= require_self
+
 @import "bootstrap-sprockets";
 
  */
+/*
 @import "bootstrap-sprockets";
 @import "bootstrap";
+*/
 
 @-webkit-keyframes fadeIn {
 	from {
