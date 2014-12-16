@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
   get 'static_pages/home'
 
   get 'static_pages/about'
@@ -69,3 +69,4 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+    

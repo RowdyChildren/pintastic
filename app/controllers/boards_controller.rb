@@ -39,6 +39,7 @@ class BoardsController < ApplicationController
         format.json { render json: @board.errors, status: :unprocessable_entity }
       end
     end
+      redirect_to "/pins/new"
   end
 
   # PATCH/PUT /boards/1
@@ -53,6 +54,7 @@ class BoardsController < ApplicationController
         format.json { render json: @board.errors, status: :unprocessable_entity }
       end
     end
+      
   end
 
   # DELETE /boards/1

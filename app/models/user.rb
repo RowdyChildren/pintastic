@@ -7,13 +7,13 @@ class User < ActiveRecord::Base
 	has_many :pins
 
 
-	validates :first_name, 
-	presence: true,
-	length: { minimum: 2, maximum: 20 }
-
-	validates :last_name, 
-	presence: true,
-	length: { minimum: 2, maximum: 20 }
+#	validates :first_name, 
+#	presence: true,
+#	length: { minimum: 2, maximum: 20 }
+#
+#	validates :last_name, 
+#	presence: true,
+#	length: { minimum: 2, maximum: 20 }
 
 
 end

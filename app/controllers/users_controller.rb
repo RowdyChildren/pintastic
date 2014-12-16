@@ -46,6 +46,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+      redirect_to "/boards/new"
   end
 
   # PATCH/PUT /users/1
@@ -60,6 +61,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+      
   end
 
   # DELETE /users/1
